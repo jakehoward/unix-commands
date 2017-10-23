@@ -10,3 +10,7 @@ Unix commands to remember
 
 ### OSX/macOS specific
 - `sudo lsof -i | grep LISTEN` - Which services are listening and on which ports?
+
+## Tricks of the trade
+- `while [ $? -eq 0 ]; do npm test -s; done` - Do something until failure occurs (typically run flakey tests)
+- `yes 'You are a UNIX god' | xargs say` - Have fun, ideally at the expense of your friends
