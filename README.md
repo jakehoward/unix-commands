@@ -16,7 +16,7 @@ Unix commands to remember
 - `sudo netstat -nlp | grep LISTEN` - Which services are listening on which ports?
 
 ### OSX/macOS specific
-- `sudo lsof -i | grep LISTEN` - Which services are listening and on which ports?
+- `sudo lsof -in | grep LISTEN` - Which services are listening and on which ports?
 
 ## Tricks of the trade
 - `while [ $? -eq 0 ]; do npm test -s; done` - Do something until failure occurs (typically run flakey tests)
