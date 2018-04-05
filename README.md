@@ -15,6 +15,11 @@ Unix commands to remember
 ## Networking
 - `sudo netstat -nlp | grep LISTEN` - Which services are listening on which ports?
 
+### SSH Tunnel
+Bind port 8000 on the machine on which you run the command to port 8000 on machine at 1.2.3.4
+- `ssh -i ~/.ssh/key.pem -L 8000:localhost:8000 user@1.2.3.4` (bind to localhost only)
+- `ssh -i ~/.ssh/key.pem -L \*:8000:localhost:8000 user@1.2.3.4` (publically available)
+
 ### OSX/macOS specific
 - `sudo lsof -in | grep LISTEN` - Which services are listening and on which ports?
 
