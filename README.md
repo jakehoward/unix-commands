@@ -4,7 +4,7 @@ Unix commands to remember
 ## Disks
 - `fdisk -l` - list disks
 - `umount /dev/sdX` - unmount a disk
-- `sudo shred -v -n1 -z /dev/sdX` - securely(ish) erase the contents of /dev/sdX 
+- `sudo shred -v -n1 -z /dev/sdX` - securely erase the contents of /dev/sdX for flash media, -n 7 for magnetic
 - `mkfs -t ext4 /dev/sdXn` - add a filesystem
 - `mount /dev/sdx1 /storage` - mount device in directory
 
