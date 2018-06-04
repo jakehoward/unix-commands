@@ -26,3 +26,6 @@ Bind port 8000 on the machine on which you run the command to port 8000 on machi
 ## Tricks of the trade
 - `while [ $? -eq 0 ]; do npm test -s; done` - Do something until failure occurs (typically run flakey tests)
 - `yes 'You are a UNIX god' | xargs say` - Have fun, ideally at the expense of your friends
+
+## Git
+`git config --global alias.logr 'log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches --decorate --all'`
