@@ -28,4 +28,4 @@ Bind port 8000 on the machine on which you run the command to port 8000 on machi
 - `yes 'You are a UNIX god' | xargs say` - Have fun, ideally at the expense of your friends
 
 ## Git
-`git config --global alias.logr 'log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches --decorate --all'`
+`git config --global alias.logr "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches --decorate --all"`
