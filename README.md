@@ -8,6 +8,9 @@ Unix commands to remember
 - `mkfs -t ext4 /dev/sdXn` - add a filesystem
 - `mount /dev/sdx1 /storage` - mount device in directory
 
+## Process management
+- `nohup cmd arg 2>&1 >> out.log &` - push to background and disown task so can, for example, exit a server session without killing the process. Saves getting tmux up and running.
+
 ## Files and directories
 - `tar -zcvf archive-name.tar.gz directory-to-be-compressed` - Compress directory, options: z:gzip, c:create archive, v:verbose output, f:name
 - `tar -zxvf archive-name.tar.gz` - Uncompress and archive the output of the above
